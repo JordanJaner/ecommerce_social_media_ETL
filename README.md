@@ -49,7 +49,15 @@ Finally, we converted the appended DataFrames into csv files that could be impor
 <img src="/images/new_csv.png" alt="Create New CSV Files"/>
 
 ### Data Loading
-This next section was conducted using pgAdmin4. Tables were created and the csv file data were added to them. Then the created database was connected back to Jupyter Notebook. 
+This next section was conducted using pgAdmin4. Tables were created and the csv file data were added to them. 
+<img src="/images/postgres_tables.PNG" alt="Postgres Tables"/>
+
+Next, the created database was connected back to Jupyter Notebook via a connection string. 
+<img src="/images/database_connection.PNG" alt="Database Connection"/>
+
+Then, create_engine was used to analyze the data. Using the read__sql_query function, we found the max values of the platforms, found the date where the platform reddit equaled 90.36, and were also able to join tables.
+<img src="/images/database_analysis.PNG" alt="Database Analysis"/>
+
 
 ### Conclusions and Limitations
 First, we'll discuss the conclusions. As popular social media sites increase in market share, so does retail sales. This finding can be broken up further by device type. From 2009-2021, US desktop usage gradually decreased while mobile usage gradually increased until each device stabilized around the same number of time being used. People in the US could be online purchasing more from their mobile devices. This is especially relevant information for marketing departments because they can tailor their organization's content to be more mobile-friendly or create company apps for mobile devices. 
